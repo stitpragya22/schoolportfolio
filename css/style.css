@@ -1,0 +1,161 @@
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Top Menu */
+.top-menu {
+    background-color: #f4f4f4;
+    padding: 10px;
+    text-align: right;
+}
+
+.top-menu ul {
+    list-style: none;
+}
+
+.top-menu li {
+    display: inline;
+    margin-left: 15px;
+}
+
+.top-menu a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Bottom Menu */
+.bottom-menu {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+.bottom-menu ul {
+    list-style: none;
+}
+
+.bottom-menu li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.bottom-menu a {
+    text-decoration: none;
+    color: white;
+}
+
+header, footer, section {
+    padding: 20px;
+    text-align: center;
+}
+
+header {
+    background-color: #f8f8f8;
+}
+
+.slider {
+    background-color: #ddd;
+    background-image: url('./../images/slider.jpg');
+    background-size: cover;
+    background-position: center top;
+    height: 400px;
+    margin-bottom: 20px;
+}
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.feature-item {
+    flex: 1;
+    background-color: #ccc;
+    padding: 20px;
+    min-width: 100px;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.text, .image {
+    flex: 1;
+    min-width: 200px;
+}
+
+.text {
+    background-color: #e2e2e2;
+    padding: 20px;
+}
+
+.image {
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.featured {
+    background-color: #bbb;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    background-color: #333;
+    color: white;
+}
+
+.footer-item {
+    flex: 1;
+    padding: 20px;
+    background-color: #444;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .features, .content, footer {
+        flex-direction: column;
+    }
+
+    .feature-item, .footer-item {
+        margin-bottom: 10px;
+    }
+
+    .top-menu ul, .bottom-menu ul {
+        text-align: center;
+    }
+
+    .top-menu li, .bottom-menu li {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    header, footer, section {
+        padding: 10px;
+    }
+
+    .slider {
+        height: 150px;
+    }
+}
